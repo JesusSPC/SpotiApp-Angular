@@ -17,6 +17,8 @@ import { ROUTES } from './app.routes';
 
 // Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+
 
 // Services
 // import { SpotifyService } from './services/spotify.service';
@@ -31,6 +33,7 @@ import { NoimagePipe } from './pipes/noimage.pipe';
     TarjetasComponent,
     LoadingComponent,
     NoimagePipe,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

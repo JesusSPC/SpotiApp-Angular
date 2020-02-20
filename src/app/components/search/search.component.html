@@ -1,6 +1,8 @@
 <div class="row">
   <div class="col">
-    <input #termino (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar álbum..." type="text">
+    <h1 *ngIf="!texto">Buscar por nombre</h1>
+    <h1 *ngIf="texto">Buscando por: {{texto}}</h1>
+    <input #termino (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar por artista..." type="text">
   </div>
 </div>
 
